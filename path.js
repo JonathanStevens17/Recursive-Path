@@ -14,7 +14,26 @@ let path = [];
   }
 
 function stroll(path, index){
-  if()
+  if(index == path.length-1){
+    return 1;
+  }
+  else if(index > path.length-1){
+    return 0;
+  }
+  else{
+    return stroll(path, index+1);
+  }
+  function rsj(path,index){
+    if(index == path-1){
+      return 1;
+    }
+    else if(index == false){
+      return 0;
+    }
+    else{
+      return rsj(path,index+1) + rsj(path,index+2) + rsj(path,index+5);
+    }
+  }
 }
 
 
